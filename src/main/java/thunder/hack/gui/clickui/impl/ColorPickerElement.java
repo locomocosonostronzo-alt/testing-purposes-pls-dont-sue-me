@@ -108,7 +108,7 @@ public class ColorPickerElement extends AbstractElement {
         apos = Render2DEngine.scrollAnimate(apos, (float) (cy + (ch - 3 - ((ch - 3) * (alpha / 255f)))), .6f);
 
         Color colorA = Color.getHSBColor(hue, 0.0F, 1.0F), colorB = Color.getHSBColor(hue, 1.0F, 1.0F);
-        Color colorC = new Color(0, 0, 0, 0), colorD = new Color(0, 0, 0);
+        Color colorC = new Color(0, 0, 0, 0), colorD = new Color(100, 100, 100);
 
         Render2DEngine.horizontalGradient(matrixStack, (float) cx + 2, (float) cy, (float) (cx + cw), (float) (cy + ch), colorA, colorB);
         Render2DEngine.verticalGradient(matrixStack, (float) (cx + 2), (float) cy, (float) (cx + cw), (float) (cy + ch), colorC, colorD);
